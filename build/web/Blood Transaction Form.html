@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <link rel=stylesheet href="themes/style.css" type="text/css">
+    <script src="themes/jquery.min.js"></script>
+    <script src="themes/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#register").validate({
+                rules: {
+                    username: {
+                        remote : {
+                            url : "validateusername",
+                            type : "post",
+                            data: {
+                                username: function(){
+                                    return $("#username").val();
+                                }
+
+                            }
+                        }
+                    },
+                    studentid: {
+                        remote : {
+                            url : "validatestudentid",
+                            type : "post",
+                            data: {
+                                username: function(){
+                                    return $("#studentid").val();
+                                }
+
+                            }
+                        }
+                    },
+                    passwd: {
+                        minlength: 5
+                    },
+                    cfmpasswd: {
+                        equalTo: "#passwd"
+                    }
+                },
+                messages : {
+                    username: {
+                        remote: "Username already taken."
+                    },
+                    studentid: {
+                        remote: "Student ID already registered as member."
+                    },
+                    passwd: {
+                        minlength: "Password must have at least 5 characters/digits."
+                    },
+                    cfmpasswd: {
+                        equalTo: "Your password and confirmation password do not match."
+                    }
+                    
+                }
+            });
+        });
+    </script>
+</head>
+
+<body style="background-color:white">
+<div class="topnav" id="myTopnav">
+    <div class="logo">
+        <a href="homepage.jsp"><img src="pictures/textlogo.png"></a>
+    </div>
+     <div class="dropdown">
+        <a href="aboutus.jsp" class="dropbtn">About Us</a>
+    </div>
+    <div class="dropdown">
+        <a href="faq.jsp" class="dropbtn">FAQ</a>
+    </div>
+    <div class="right" style="padding-right: 300px;">
+        <a href="login.jsp">Login</a>
+        <a href="register.jsp">Register</a>
+    </div>
+</div>
+<div class="content" style="background-color: whitesmoke">
+    <h1>Registration</h1>
+    <hr/>
+    <form class="addsponsor" action="addmember" id="register" method="post">
+        <p>
+            <label for="studname">Name:</label>
+            <input type="text" id="studname" name="name" required><br>
+        </p>
+        <p>
+            <label for="studid">Staff ID:</label>
+            <input type="text" id="studid" name="studentid" required><br>
+        </p>
+        <p>
+            <label>Date:</label>
+            <input type="text"><br><br>
+        </p>
+        
+        <hr>
+        <p>
+            <label for="phone">How many bags of Blood:</label>
+            <input type="text" id="phone" name="phone" required><br>
+        </p>
+        <p>
+            <label for="email">Destination:</label>
+            <input type="email" id="email" name="email" required><br>
+        </p>
+        
+        <br><br>
+        <p style="text-align: right">
+            <label></label>
+            <input type="submit" name="submit" id="submit" value="Register">
+        </p>
+    </form>
+    <script>
+
+
+    </script>
+</div>
+
+
+<footer>Oracle Blood Bank<sup>&reg;</sup> All Right Reserved</footer>
+
+</body>
+</html>

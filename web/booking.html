@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <link rel=stylesheet href="themes/style.css" type="text/css">
+    <script src="themes/jquery.min.js"></script>
+    <script src="themes/jquery.validate.min.js"></script>
+   
+</head>
+
+<body style="background-color:white">
+<div class="topnav" id="myTopnav">
+    <div class="logo">
+        <a href="homepage.jsp"><img src="pictures/textlogo.png"></a>
+    </div>
+     <div class="dropdown">
+        <a href="aboutus.jsp" class="dropbtn">About Us</a>
+    </div>
+    <div class="dropdown">
+        <a href="faq.jsp" class="dropbtn">FAQ</a>
+    </div>
+    <div class="right" style="padding-right: 300px;">
+        <a href="login.jsp">Login</a>
+        <a href="register.jsp">Register</a>
+    </div>
+</div>
+<div class="content" style="background-color: whitesmoke">
+    <h1>Booking</h1>
+    <hr/>
+    <form class="addsponsor" action="addmember" id="register" method="post">
+        <p>
+            <label for="studname">Booking ID:</label>
+            <input type="text" id="studname" name="name" required><br>
+        </p>
+        <p>
+            <label for="studid">Donor ID:</label>
+            <input type="text" id="studid" name="studentid" required><br>
+        </p>
+        <hr>
+        <p>
+            <label>Booking DATE:</label>
+            <input type="text">
+        </p>
+        
+        <p>
+            <label>Please Select a Booking Time:</label>
+        <select name="Time">
+          <option value="9-12 " >9-12 AM</option>
+          <option value="1-4 "  >1-4 PM</option>
+          <option value="5-8 " >5-8 PM</option>
+         </select>
+        </p>
+        <p>
+            <label for="email">Booking Status</label>
+            <select name="Time">
+          <option value="9-12 " >Keep</option>
+          <option value="1-4 "  >Cancel</option>
+          <option value="5-8 " >Pass</option>
+         </select>
+        </p>
+      
+        <br><br>
+        <p style="text-align: right">
+            <label></label>
+            <input type="submit" name="submit" id="submit" value="Booking">
+        </p>
+    </form>
+    <script>
+
+
+    </script>
+</div>
+
+
+<footer>Oracle Blood Bank<sup>&reg;</sup> All Right Reserved</footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel=stylesheet href="themes/style.css" type="text/css">
+    <link rel=stylesheet href="themes/slideshow.css" type="text/css">
+    <link rel=stylesheet href="themes/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="themes/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+               $(window).load(function() {
+              $('.flexslider').flexslider({
+                animation: "slide"
+              });
+            });
+    </script>
+</head>
+
+<body class="home">
+    <div class="topnav" id="myTopnav">
+        <div class="logo">
+            <a href="homepage.jsp"><img src="pictures/Logo.png"></a>
+        </div>
+        <div class="dropdown">
+        <a href="aboutus.jsp" class="dropbtn">About Us</a>
+    </div>
+    <div class="dropdown">
+        <a href="faq.jsp" class="dropbtn">FAQ</a>
+    </div>
+        <div class="right">
+        <a href="login.jsp">Login</a>
+        <a href="register.jsp">Register</a>
+        </div>
+    </div>
+
+    <div class="content" style="line-height: 1.5;">
+        
+        <section class="intro">
+            <section class="activities">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                        <div class="slide1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide2">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide3">
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+                </section>
+            <div class="intropadding">
+                <div class="main-intro">
+                    <div class="introbutton">
+                        <div class="box">
+                            <div class="column">
+                                <div class="center">
+                                    <div class="imgcenter">
+                                        <img src="pictures/Logo.png">
+                                    </div>
+                                    <div class="buttoncontent">
+                                        <h3>Register</h3>
+
+
+                                        Become a donor now
+
+                                    </div>
+                                </div>    
+                                </div>
+                            </div>
+                        </div>
+                    <div class="introbutton">
+                        <div class="box">
+                            <div class="column">
+                                <div class="center">
+                                    <div class="imgcenter">
+                                        <img src="pictures/Logo.png">
+                                    </div>
+                                    <div class="buttoncontent">
+                                        <h3>Login</h3>
+
+
+                                        Donate blood now
+
+                                    </div>
+                                </div>    
+                                </div>
+                            </div>
+                        </div>
+                    <div class="introbutton">
+                        <div class="box">
+                            <div class="column">
+                                <div class="center">
+                                    <div class="imgcenter">
+                                        <img src="pictures/Logo.png">
+                                    </div>
+                                    <div class="buttoncontent">
+                                        <h3>Register</h3>
+
+
+                                        Become a donor now
+
+                                    </div>
+                                </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <div class="row">
+            <div class="wrapper">
+                <section class="padding">
+                    <div class="row">
+                        <div class="middle">
+                            <h2>Why give blood</h2>
+							<p>Blood can't be replaced by anything in the world. A single donation can save up to three people's lives. 500 Malaysians will need blood transfusions this year.</p>
+							<p>Saving three lives in 15 minutes... how does that sound? </p>
+                        </div>
+                    </div>
+                </section>
+                <div class="separator">
+                    <img src="pictures/Logo.png" style="height: 30px; width: 30px;">
+                </div>
+                <section class="padding">
+                    <div class="row">
+                        <div class="middle">
+                            <h2>How your blood is used</h2>
+							<p>How blood was used in 2015, according to hospital usage</p>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="circle">
+                                        <div class="circletext">
+                                            <span class="circletitle">70%</span>
+                                            <h4>Help medical conditions such as anemia, cancer, etc
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="circle">
+                                        <div class="circletext">
+                                            <span class="circletitle">25%</span>
+                                            <h4>Used in surgeries including cardiac surgery etc
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="circle">
+                                        <div class="circletext">
+                                            <span class="circletitle">5%</span>
+                                            <h4>Treat blood loss after childbirth
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <div class="contactus" style="margin:auto;width:80%;padding-top:270px;">
+            <div class="contact">
+                    <div class="details">
+                    <img src="pictures/email.png" alt="email" style="height:150px;">
+                    <h3>E-mail Us</h3>
+                    <h3>Support:<br/>
+                        <a href="mailto:support@oraclebb.com">support@oraclebb.com</a>
+                    </h3>
+                    <h3>Enquiries:<br/>
+                        <a href="mailto:enquire@oraclebb.com">enquire@oraclebb.com</a>
+                    </h3>
+                    <h3>Feedback:<br/>
+                        <a href="mailto:feedback@oraclebb.com">feedback@oraclebb.com</a>
+                    </h3>
+                </div>
+                <div class="details">
+                    <img src="pictures/phone.png" alt="phone" style="height:150px;">
+                    <h3>Call Us</h3>
+                    <h3>
+                        Enquiries:<br/>
+                        <a href="tel:03-55511122">03-55511122</a>
+                    </h3>
+                    <h3>
+                        Fax:<br/>
+                        <a href="tel:03-55511144">03-55511144</a>
+                    </h3>
+                </div>
+                <div class="details">
+                    <img src="pictures/pin.png" alt="location" style="height:150px;">
+                    <h3>Find Us</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1428.977308197352!2d101.70996060719322!3d3.1441782676393526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3629019c8661%3A0x584753437f2a7287!2sLow+Yat+Plaza!5e0!3m2!1sen!2s!4v1491838579577" max-width="100%" height="270" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+            
+        
+        
+        <section class="socialmedia">
+            <div class="wrapper">
+                <p>Follow Us at </p>
+                <a href="https://www.facebook.com/taruc.igs/" target="_blank" style="color: black; text-decoration: none;">
+                    <img src="pictures/fblogo.png" style="width: 20px;">
+                    <span>Oracle Blood Bank</span>
+                </a>
+            </div>    
+        </section>
+        
+
+        
+    </div>
+    <footer>Oracle Blood Bank<sup>&reg;</sup></footer>
+    <script src="themes/jquery.slideshow.js"></script>
+
+</body>
+</html>
