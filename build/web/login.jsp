@@ -4,6 +4,18 @@
 <head>
     <link rel=stylesheet href="themes/style.css" type="text/css">
     <title>Login</title>
+    <jsp:useBean id="donor" class="model.Donor" scope="session"></jsp:useBean>
+    <jsp:useBean id="staff" class="model.Staff" scope="session"></jsp:useBean>
+    <% if (staff.getPosition().equals("Management") || staff.getPosition().equals("Staff") || staff.getPosition().equals("Guest")) { %>
+    <style>
+        a[href=viewmember] {
+            display : none;
+        }
+        a[href=event] {
+            display : none;
+        }
+    </style>
+    <% } %>
 </head>
 
 <body style="background-color:rgb(240,240,240)">
@@ -18,8 +30,13 @@
         <a href="faq.jsp" class="dropbtn">FAQ</a>
     </div>
     <div class="right" style="padding-right: 300px;">
+        <% if (staff.getPosition().equals("Guest")) {%>
         <a href="login.jsp">Login</a>
         <a href="register.jsp">Register</a>
+         <% } else { %>
+            <a href="editprofile.jsp">Profile</a>
+            <a href="logout">Logout</a>
+        <% } %>
     </div>
 </div>
     <div class="content">

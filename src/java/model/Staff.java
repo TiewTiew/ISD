@@ -43,6 +43,9 @@ public class Staff implements Serializable {
     @Size(min = 1, max = 10)
     @Column(name = "STAFF_ID")
     private String staffId;
+    @Size(max = 12)
+    @Column(name = "STAFF_PASSWORD")
+    private String staffPassword;
     @Size(max = 30)
     @Column(name = "STAFF_NAME")
     private String staffName;
@@ -84,6 +87,14 @@ public class Staff implements Serializable {
 
     public void setStaffName(String staffName) {
         this.staffName = staffName;
+    }
+    
+    public String getStaffPassword() {
+        return staffPassword;
+    }
+
+    public void setStaffPassword(String staffPassword) {
+        this.staffPassword = staffPassword;
     }
 
     public String getStaffIc() {
